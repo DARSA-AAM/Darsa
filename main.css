@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rockwell, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Rockwell';
+    src: url('rockwell.woff2') format('woff2'),
+         url('rockwell.woff') format('woff');
+    /* Add more src declarations for different font formats if necessary */
+}
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Example background color for navbar */
+    height: 70px; /* Example height of navbar */
+    position: relative;
+}
+
+.icon {
+    color: #362616;
+    text-align: left;
+    font-weight: bold;
+    font-family: Rockwell, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
+
+.icon img {
+    height: 50px; /* Adjust the height of the image as needed */
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.search-wrapper {
+    display: inline-block;
+    border-radius: 60px; /* Adjust based on desired oblong shape */
+    overflow: hidden;
+}
+
+.search-input {
+    padding: 15px;
+    border: none;
+    border-radius: 60px; /* Adjust based on desired oblong shape */
+    width: 400px; /* Adjust width as needed */
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #a67b5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px 30px 30px 30px; /* Adjust based on desired oblong shape */
+}
+footer {
+    background-color: #cfc2b8;
+    color: #362616;
+    text-align: left;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer img {
+    max-width: 25px;
+    height: auto;
+    margin-right: 5px; /* Add some margin between the image and text */
+    vertical-align: middle; /* Align the text vertically with the image */
+}
+
+.suggestions-box {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 400px; /* Same as the input width */
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    z-index: 100;
+}
+
+.suggestions-box div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestions-box div:last-child {
+    border-bottom: none;
+}
+
+.suggestions-box div:hover {
+    background-color: #f8f8f8;
+}
